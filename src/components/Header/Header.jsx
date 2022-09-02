@@ -14,9 +14,9 @@ export const Header = () => {
 
 
     return(
-        <div className="header ">
+        <div className="header">
             <div>
-                <Link to="/">
+                <Link to="/cardapio">
                     <h2>This.Burguer</h2>
                 </Link>
             </div>

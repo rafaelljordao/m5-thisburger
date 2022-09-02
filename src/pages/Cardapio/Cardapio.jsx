@@ -1,5 +1,5 @@
 import { CardComponent } from "../../components/CardComponent/CardComponent";
-import { CartState } from "../Context/Context";
+import { CartState } from "../../Context/Context";
 import './Cardapio.css'
 
 export const Cardapio = () => {
@@ -12,7 +12,7 @@ export const Cardapio = () => {
   console.log(produtos);
 
   return (
-    <div className="home">
+    <div className="cardapio">
       <h2>Produtos</h2>
       <div className="productsContainer">
         {produtos.map((prod) => (
