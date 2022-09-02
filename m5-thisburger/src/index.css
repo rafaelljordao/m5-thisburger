@@ -13,38 +13,5 @@ a {
   text-decoration: none;
 }
 
-.mainContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.mainContainer.header {
-  align-items: center;
-}
-
-.firstCol {
-  flex-basis: 100%;
-}
-
-.secondCol {
-  flex-basis: 100%;
-}
-
-.block {
-  background-color: #bee8f7;
-  padding: 1rem;
-  margin: 0.5rem;
-}
 
 
-@media screen and (min-width: 800px) {
-  
-.firstCol {
-  flex: 2;
-}
-
-.secondCol {
-  flex: 1;
-}
-}

@@ -53,7 +53,7 @@ const Context = ({children}) => {
 
     const [state, dispatch] = useReducer(cartReducer, {
         data,
-        cart: []
+        cart: [],
     })
 
   return (
