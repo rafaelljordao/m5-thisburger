@@ -1,0 +1,27 @@
+.cartPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5em;
+    
+}
+
+.subTotal {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartProduct {
+    display: flex;
+    gap: 10px;
+    margin: 2em;
+}
+
+.imgCartProduct{
+    width: 08em;
+}
+
+.numberImput {
+    width: 8em;
+    height: 2em;
+}
