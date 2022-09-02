@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { LandingPage } from './pages/landingPage/LandingPage'
+import Pedido from './pages/pedido/Pedido'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className="App">
         <LandingPage />
+        <Pedido />
     </div>
   )
 }
