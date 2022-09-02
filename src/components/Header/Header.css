@@ -1,0 +1,16 @@
+.header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+.cart{
+    background-color: yellow;
+}
+
+ .cartNumber {
+    margin: 0.5em;
+    
+  }
+  
