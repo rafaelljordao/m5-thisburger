@@ -9,8 +9,8 @@ import './CardComponent.css'
 
 
     return <div className="products">
-                <h2>{prod.name}</h2>
-                <h3>Preço: R$ {prod.price}</h3>
+                <h2>{prod.nomeItem}</h2>
+                <h3>Preço: R$ {prod.preco}</h3>
                 <img src={prod.image} />
                 {
                 cart.some(p=>p.id===prod.id) ? (
