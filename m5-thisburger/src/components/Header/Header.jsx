@@ -1,6 +1,6 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { CartState } from "../Context/Context";
+import { CartState } from "../../Context/Context";
 import './Header.css'
 
 export const Header = () => {

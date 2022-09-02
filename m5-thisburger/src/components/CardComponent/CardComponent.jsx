@@ -1,4 +1,4 @@
-import { CartState } from '../Context/Context'
+import { CartState } from '../../Context/Context'
 import './CardComponent.css' 
    
    export const CardComponent = ({prod}) => {
