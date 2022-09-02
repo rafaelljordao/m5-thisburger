@@ -23,7 +23,20 @@ export const Cart = () => {
                             <img className="imgCartProduct" src={prod.image} />
                             <p>{prod.name}</p> 
                             R${prod.price}
-                            <input className="numberImput" type="number" min="0"/>
+                            <input 
+                            value={prod.qty} 
+                            onChange={(e) => {
+                                dispatch({
+                                    type: "CHANGE_CART_QTY",
+                                    payload: {
+                                        id: prod.id,
+                                        qty: e.target.value,
+                                    }
+                                })
+                            }}
+                            className="numberImput" 
+                            type="number" 
+                            min="0"/>
                             <span onClick={() => {
                                 dispatch({
                                     type: "REMOVE_FROM_CART",
