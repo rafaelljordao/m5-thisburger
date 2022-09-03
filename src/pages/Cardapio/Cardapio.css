@@ -1,12 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .cardapio {
+    width: 100vw;
     display: flex;
     background-color: black;
 }
 
 .productsContainer {
     display: flex;
-    width: 80%;
-    padding: 50px;
+    width: 80vw;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: space-around;
 }
