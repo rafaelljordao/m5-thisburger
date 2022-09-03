@@ -25,3 +25,4 @@ export async function deletePedidos(id){
     return response.status
 }
 
+
