@@ -7,11 +7,13 @@ export const Cart = () => {
 
     const {state: { cart }, dispatch } = CartState()
 
-    const [total, setTotal] = useState();
+    const [total, setTotal] = useState(0);
+
 
     useEffect(()=> {
         setTotal(cart.reduce((acc, current)=> acc + Number(current.price) * current.qty ,0))
     }, [cart])
+    
 
     return(
     <div className="cartPage">
@@ -22,7 +24,7 @@ export const Cart = () => {
                         <li className="cartProduct" key={prod.id}>
                             <img className="imgCartProduct" src={prod.image} />
                             <p>{prod.name}</p> 
-                            R${prod.price}
+                            R${Number(prod.price)}
                             <input 
                             value={prod.qty} 
                             onChange={(e) => {
