@@ -25,3 +25,5 @@ export async function deletePedidos(id){
     return response.status
 }
 
+const Teste = await listPedidos()
+console.log(Teste)
