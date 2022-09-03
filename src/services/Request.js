@@ -5,6 +5,6 @@ export async function listCardapio(){
     return response.data
 }
 
-const teste = await listCardapio()
-console.log(teste)
+// const teste = await listCardapio()
+// console.log(teste)
 
