@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './pedido.css';
+
 const Pedido = () => {
     return(
         <div className='pedido'> 

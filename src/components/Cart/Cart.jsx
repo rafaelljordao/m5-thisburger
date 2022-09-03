@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CartState } from "../../Context/Context";
 import { FaTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import './Cart.css'
 
 export const Cart = () => {
@@ -52,7 +53,9 @@ export const Cart = () => {
         <div className="subTotal">
             <span>Subtotal: ({cart.length} itens)</span>
             <span>Total: R${total}</span>
+            <Link to="/pedido">
             <button>Finalizar Compra</button>
+            </Link>
         </div>
 
     </div>)

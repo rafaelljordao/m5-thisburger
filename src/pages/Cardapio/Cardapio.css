@@ -1,5 +1,6 @@
 .cardapio {
     display: flex;
+    background-color: black;
 }
 
 .productsContainer {
