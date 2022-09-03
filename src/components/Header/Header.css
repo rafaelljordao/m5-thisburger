@@ -2,15 +2,21 @@
     width: 95%;
     display: flex;
     justify-content: space-between;
+    background-color: black;
   }
-  
-
-.cart{
-    background-color: yellow;
+.thisburger{
+  color: chartreuse;
+  text-decoration: none;
+  padding: 10px;
 }
 
- .cartNumber {
+.cart{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(255, 111, 0);
+}
+
+.cartNumber {
     margin: 0.5em;
-    
   }
   

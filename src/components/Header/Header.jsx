@@ -7,9 +7,9 @@ export const Header = () => {
 
 
 
-  const {state: {cart},
+const {state: {cart},
     
-    } = CartState()
+} = CartState()
 
 
 
@@ -17,7 +17,7 @@ export const Header = () => {
         <div className="header">
             <div>
                 <Link to="/cardapio">
-                    <h2>This.Burguer</h2>
+                    <h2 className="thisburger">This.Burguer</h2>
                 </Link>
             </div>
             <div className="cart">
