@@ -1,3 +1,5 @@
+import './Footer.css'
+
 
 const Footer = () => {
   return (
@@ -13,16 +15,16 @@ const Footer = () => {
       <div className="links">
         <div className="institucional">
           <h2>institucional</h2>
-          <a href="">Home</a>
-          <a href="">Quem Somos</a>
-          <a href="">Cardápio</a>
-          <a href="">Contato</a>
+          <Links href="">Home</Links>
+          <Links href="">Quem Somos</Links>
+          <Links href="">Cardápio</Links>
+          <Links href="">Contato</Links>
         </div>
         <div className="cardapio">
           <h2>cardápio</h2>
-          <a href="">Burguers</a>
-          <a href="">Bebidas</a>
-          <a href="">Porções</a>
+          <Links href="">Burguers</Links>
+          <Links href="">Bebidas</Links>
+          <Links href="">Porções</Links>
         </div>
       </div>
       <div className="social-media">
@@ -35,3 +37,5 @@ const Footer = () => {
   </footer>
   )
 }
+
+export default Footer

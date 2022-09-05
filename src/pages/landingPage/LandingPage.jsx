@@ -1,4 +1,5 @@
 import Header from '../../components/Header/Header'
+import Footer from '../../components/footer/Footer'
 import './landingPage.css'
 
 export const LandingPage = () => {
@@ -32,7 +33,6 @@ export const LandingPage = () => {
                     <img src="src/assets/thisburger-map.jpg" className='imageSection4'/>
                 </div>
             </div>
-
         </div>
     )
 }

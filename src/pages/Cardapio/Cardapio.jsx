@@ -1,5 +1,4 @@
 import { CardComponent } from "../../components/CardComponent/CardComponent";
-import PageWrapper from "../../components/pageWrapper/PageWrapper";
 import { CartState } from "../../Context/Context";
 import './Cardapio.css'
 
