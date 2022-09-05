@@ -11,6 +11,7 @@ const Pedido = () => {
 useEffect(() => {
     listPedidos().then((response) => {
         setHistorico(response)
+        console.log(historico[0])
     })
 }, [])
 
@@ -25,20 +26,25 @@ useEffect(() => {
         console.log(cart)
     }, [cart])
     console.log(cart)
+    // const itensPedido = JSON.parse(prod.itensPedido).map((atual) => {
+    //     return (`${atual.nomeItem} Quantidade: ${atual.qty}`)
+    // })
+    // console.log(itensPedido)
     return(
         <div className='pedido'> 
             <div className="pedidoContainer">
             <ul>
                 {
-                    historico.map(prod => (
+                    historico.map(prod => {
+                        return(
                         <li className="cartPedido" key={prod.id}>
                             <img className="imgCartProduct" src={prod.image} />
                             <p>{prod.nomeItem}</p> 
-                            <p> Valor Unitário: R${Number(prod.preco)} </p>
-                            <p> Quantidade: {prod.qty}</p>
-                            <p> Total: {(prod.preco * prod.qty)}</p>             
+                            <p> Itens do Pedido: </p>
+                            <p> Quantidade: {Number(prod.quantidadeItens)}</p>
+                            <p> Total: {Number(prod.totalPedido)}</p>             
                         </li>
-                    ))
+                    )})
                 }
             </ul>
             <p> Total do Pedido: {totalPedido} </p>    
