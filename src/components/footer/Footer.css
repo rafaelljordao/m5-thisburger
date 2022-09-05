@@ -1,0 +1,110 @@
+
+
+
+.footer-header {
+  background-color: rgba(150, 38, 38, 1);
+  margin-top: 500px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: iron;
+  font-size: 25px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cadastro {
+  border-bottom: 2px solid white;
+  outline: none;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cadastro .email {
+  color: white;
+  background: inherit;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.email::placeholder {
+  color: white;
+  font-family: gothan;
+}
+
+.cadastro .submit {
+  background: inherit;
+  border: none;
+  color: white;
+  font-family: iron;
+}
+
+footer .footer-main {
+  background-image: url(./bg-footer.jpg);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-main .links {
+  display: flex;
+  gap: 30px;
+}
+
+.links h2 {
+  font-family: iron;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.institucional {
+  display: flex;
+  flex-direction: column;
+  font-family: gothan;
+}
+
+.institucional a {
+  text-decoration: none;
+  color: white;
+}
+
+.institucional a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardapio {
+  display: flex;
+  flex-direction: column;
+  font-family: gothan;
+}
+
+.cardapio a  {
+  text-decoration: none;
+  color: white;
+}
+
+.cardapio a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rodape {
+  background-color: black;
+  height: 85px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: gothan;
+  font-size: 13px;
+  padding: 0 30px;
+}

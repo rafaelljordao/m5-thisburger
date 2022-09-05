@@ -1,4 +1,5 @@
 import { CardComponent } from "../../components/CardComponent/CardComponent";
+import PageWrapper from "../../components/pageWrapper/PageWrapper";
 import { CartState } from "../../Context/Context";
 import './Cardapio.css'
 
@@ -12,7 +13,8 @@ export const Cardapio = () => {
   console.log(produtos);
 
   return (
-    <div className="cardapio">
+    <PageWrapper>
+      <div className="cardapio">
       <h2>Produtos</h2>
       <div className="productsContainer">
         {produtos.map((prod) => (
@@ -22,5 +24,6 @@ export const Cardapio = () => {
         ))}
       </div>
     </div>
+    </PageWrapper>
   );
 };
