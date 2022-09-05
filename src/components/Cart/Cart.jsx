@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { CartState } from "../../Context/Context";
 import { FaTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { createPedidos } from "../../services/Request";
 import './Cart.css'
 
 export const Cart = () => {
@@ -12,7 +13,8 @@ export const Cart = () => {
 
 
     useEffect(()=> {
-        setTotal(cart.reduce((acc, current)=> acc + Number(current.price) * current.qty ,0))
+        setTotal(cart.reduce((acc, current)=> acc + Number(current.preco) * current.qty ,0))
+        console.log(cart)
     }, [cart])
     
 
@@ -25,7 +27,7 @@ export const Cart = () => {
                         <li className="cartProduct" key={prod.id}>
                             <img className="imgCartProduct" src={prod.image} />
                             <p>{prod.name}</p> 
-                            R${Number(prod.price)}
+                            R${Number(prod.preco)}
                             <input 
                             value={prod.qty} 
                             onChange={(e) => {
@@ -33,7 +35,7 @@ export const Cart = () => {
                                     type: "CHANGE_CART_QTY",
                                     payload: {
                                         id: prod.id,
-                                        qty: e.target.value,
+                                        qty: Number(e.target.value),
                                     }
                                 })
                             }}
@@ -56,7 +58,7 @@ export const Cart = () => {
             <span>Subtotal: ({cart.length} itens)</span>
             <span>Total: R${total}</span>
             <Link to="/pedido">
-            <button>Finalizar Compra</button>
+            <button onClick={() => createPedidos({idCliente:1, itensPedido:JSON.stringify(cart), quantidadeItens:cart.length, totalPedido:total})}>Finalizar Compra</button>
             </Link>
         </div>
 
