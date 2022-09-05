@@ -1,7 +1,7 @@
 import React from 'react';
 import { CartState } from '../../Context/Context';
 import { useState, useEffect } from 'react';
-import { listPedidos } from '../../services/Request';
+import { deletePedidos, listPedidos } from '../../services/Request';
 
 import './pedido.css';
 
@@ -9,9 +9,16 @@ import './pedido.css';
 const Pedido = () => {
     const [historico, setHistorico] = useState([])
 useEffect(() => {
-    listPedidos().then((response) => {
+    listPedidos()
+    .then((response) => {
+        response.map((prod) =>{
+        prod.itensPedido = JSON.parse(prod.itensPedido)
+        prod.itensPedido = prod.itensPedido.map((item)=>{
+            return `${item.nomeItem} Quantidade: ${item.qty} `
+        })
+        })
         setHistorico(response)
-        console.log(historico[0])
+        console.log(historico)
     })
 }, [])
 
@@ -40,17 +47,16 @@ useEffect(() => {
                         <li className="cartPedido" key={prod.id}>
                             <img className="imgCartProduct" src={prod.image} />
                             <p>{prod.nomeItem}</p> 
-                            <p> Itens do Pedido: </p>
+                            <p> Itens do Pedido: {prod.itensPedido} </p>
                             <p> Quantidade: {Number(prod.quantidadeItens)}</p>
                             <p> Total: {Number(prod.totalPedido)}</p>             
                         </li>
                     )})
                 }
             </ul>
-            <p> Total do Pedido: {totalPedido} </p>    
             </div>
-        <button> Alterar Pedido </button>
-        <button> Cancelar Pedido </button>
+        <button> Alterar Último Pedido </button>
+        <button onClick={() => deletePedidos(historico.length)}> Cancelar Último Pedido </button>
         </div>
     )
 }
