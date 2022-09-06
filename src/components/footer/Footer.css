@@ -1,4 +1,4 @@
-/* 
+
 
 
 .footer-header {
@@ -44,7 +44,7 @@
 }
 
 footer .footer-main {
-  background-image: url(./bg-footer.jpg);
+  background-image: url(../../assets/bg-footer.jpg);
   color: white;
   display: flex;
   justify-content: space-around;
@@ -80,18 +80,18 @@ footer .footer-main {
   cursor: pointer;
 }
 
-.cardapio {
+.cardapio-footer {
   display: flex;
   flex-direction: column;
   font-family: gothan;
 }
 
-.cardapio a  {
+.cardapio-footer a  {
   text-decoration: none;
   color: white;
 }
 
-.cardapio a:hover {
+.cardapio-footer a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -106,4 +106,4 @@ footer .footer-main {
   font-family: gothan;
   font-size: 13px;
   padding: 0 30px;
-} */
+}
