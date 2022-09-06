@@ -5,7 +5,7 @@
 .cardapio {
     width: 100vw;
     display: flex;
-    background-color: black;
+    background-color: rgba(32, 32, 32, 0.98);
 }
 
 .productsContainer {
