@@ -4,7 +4,7 @@ import { CartState } from "../../Context/Context";
 import "./Header.css";
 import logo from "../../assets/logo.png";
 
- const Header = () => {
+const Header = () => {
   const {
     state: { cart },
   } = CartState();
