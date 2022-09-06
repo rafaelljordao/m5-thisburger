@@ -1,19 +1,62 @@
-.header {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-  }
-.thisburger{
-  color: chartreuse;
+@font-face {
+  font-family: gothan;
+  src: url(./font/GothamBookFont.otf);
+}
+@font-face {
+  font-family: iron;
+  src: url(./font/iron_brine/Iron&Brine.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding: 5px 50px;
+  /* background-color: rgba(23, 26, 31, 0.73); */
+  background-color: black;
+  box-shadow: 0px 18px 20px 3px rgba(255,0,0,0.65);
+  font-weight: 400;
+  font-size: 20px;
+  font-family: iron;
+  width: 100%;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+
+header nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+
+header nav a {
   text-decoration: none;
-  padding: 10px;
+  color: #FF4D4D;
+}
+
+header nav a:hover {
+  background-color: #FF4D4D;
+  color: white;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
 }
 
 .cart{
     margin-top: 10px;
     padding: 5px;
-    background-color: rgb(255, 111, 0);
+    color: #FF4D4D; 
+    /* background-color: rgb(255, 111, 0); */
 }
 
 .cartNumber {

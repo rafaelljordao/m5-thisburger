@@ -3,9 +3,10 @@
     cursor: pointer;
     margin-top: 0.5em;
     border-radius: 3px;
-   
 }
-
+.products{
+    color: white;
+}
 .botao.addButton {
     background-color: green;
 }
