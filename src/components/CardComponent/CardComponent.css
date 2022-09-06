@@ -1,3 +1,10 @@
+
+  @font-face {
+    font-family: iron;
+    src: url(./font/iron_brine/Iron&Brine.ttf);
+  }
+  
+
 .botao {
     display: flex;
     cursor: pointer;
@@ -15,9 +22,41 @@
     border-radius: 20px;
 }
 
+.products:hover {
+    width: 25em;
+    
+}
+
 .products h2 {
     text-transform: uppercase;
 }
+
+.ingredientesHover {
+    display: none;
+}
+
+.products:hover .ingredientesHover {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: iron;
+    
+}
+
+.products:hover .prodImage {
+    display: inline-block;
+   
+}
+
+.products:hover h2{
+    display: none;
+}
+
+.products:hover h3{
+    display: none;
+}
+
 
 .botao {
     border-radius: 3px;
