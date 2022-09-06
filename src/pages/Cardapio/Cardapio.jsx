@@ -12,17 +12,17 @@ export const Cardapio = () => {
   console.log(produtos);
 
   return (
-    <PageWrapper>
+    // <PageWrapper>
       <div className="cardapio">
       <h2>Produtos</h2>
-      <div className="productsContainer">
-        {produtos.map((prod) => (
+        <div className="productsContainer">
+            {produtos.map((prod) => (
             <div>
                 <CardComponent prod = {prod} key = {prod.id}/>
             </div>
         ))}
       </div>
     </div>
-    </PageWrapper>
+    // </PageWrapper>
   );
 };

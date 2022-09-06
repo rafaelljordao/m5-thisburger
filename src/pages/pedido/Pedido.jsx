@@ -47,8 +47,11 @@ useEffect(() => {
                             <img className="imgCartProduct" src={prod.image} />
                             <p>{prod.nomeItem}</p> 
                             <p> Itens do Pedido: {prod.itensPedido} </p>
-                            <p> Total: {Number(prod.totalPedido)}</p>   
+                            <p> Total: {Number(prod.totalPedido)}</p>  
+                            
                             <button> Alterar Último Pedido </button>
+
+
                             <button onClick={() => {
                                 const confirma = confirm("Tem certeza que deseja cancelar o último pedido?")
                                 if (confirma) {

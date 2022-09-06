@@ -3,10 +3,12 @@ import { Cart } from "./components/Cart/Cart";
 import { Cardapio } from "./pages/Cardapio/Cardapio";
 import { LandingPage } from "./pages/landingPage/LandingPage";
 import Pedido from "./pages/pedido/Pedido";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/cart" element={<Cart />} />
