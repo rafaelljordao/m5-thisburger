@@ -17,7 +17,7 @@ export const Cardapio = () => {
       <div className="cardapioTitle">
         <h2>Confira os nossos Produtos</h2>
         <h3>Adicione ao carrinho o que te interessar! </h3>
-        <h4>Os preços estão tão deliciosos quanto os hamburgueres</h4>
+        <h4>Os preços estão tão deliciosos quanto os hamburgueres!</h4>
       </div>
         <div className="productsContainer">
             {produtos.map((prod) => (
