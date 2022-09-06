@@ -11,7 +11,8 @@ import './CardComponent.css'
     return <div className="products">
                 <h2>{prod.nomeItem}</h2>
                 <h3>Preço: R$ {prod.preco}</h3>
-                <img src={prod.image} />
+                <img className='prodImage' src={prod.image} />
+                <div className="ingredientesHover">Ingredientes: {prod.ingredientes}</div>
                 {
                 cart.some(p=>p.id===prod.id) ? (
                     <button onClick={() => {
