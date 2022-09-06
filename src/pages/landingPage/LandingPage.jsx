@@ -1,9 +1,11 @@
+import Header from '../../components/Header/Header'
+import Footer from '../../components/footer/Footer'
 import './landingPage.css'
 
 export const LandingPage = () => {
     return (
         <div className='lp'>
-
+            <Header/>
             <div className='lpDiv1'>
                 <div className='lpSection1'>
                     <h1 className='title-section1'>This.Burger</h1>
@@ -31,7 +33,6 @@ export const LandingPage = () => {
                     <img src="src/assets/thisburger-map.jpg" className='imageSection4'/>
                 </div>
             </div>
-
         </div>
     )
 }

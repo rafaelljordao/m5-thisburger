@@ -12,7 +12,8 @@ export const Cardapio = () => {
   console.log(produtos);
 
   return (
-    <div className="cardapio">
+    <PageWrapper>
+      <div className="cardapio">
       <h2>Produtos</h2>
       <div className="productsContainer">
         {produtos.map((prod) => (
@@ -22,5 +23,6 @@ export const Cardapio = () => {
         ))}
       </div>
     </div>
+    </PageWrapper>
   );
 };
