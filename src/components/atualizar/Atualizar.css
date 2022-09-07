@@ -42,9 +42,10 @@
 }
 
 .btnatt:hover{
-    border-color: chartreuse;
-    outline: 0;
-    box-shadow: 0 0 0 0.1rem chartreuse
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #01B213, 0 0 15px #01B213, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
 }
 
 .attfinal{
