@@ -13,6 +13,7 @@ function App() {
     <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/pedido" element={<Pedido />} />
         <Route path="/cardapio" element={<Cardapio />} />
