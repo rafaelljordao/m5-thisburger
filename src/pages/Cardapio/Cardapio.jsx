@@ -12,7 +12,6 @@ export const Cardapio = () => {
   console.log(produtos);
 
   return (
-    // <PageWrapper>
       <div className="cardapio">
       <div className="cardapioTitle">
         <h2>Confira os nossos Produtos</h2>
@@ -27,6 +26,5 @@ export const Cardapio = () => {
         ))}
       </div>
     </div>
-    // </PageWrapper>
   );
 };
