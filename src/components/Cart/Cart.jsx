@@ -17,6 +17,8 @@ export const Cart = () => {
 
     return (
     <div className="cartPage">
+        <h1>Carrinho</h1>
+        <div className="container">
         <div className="productContainer">
             <ul>
                 {
@@ -55,8 +57,9 @@ export const Cart = () => {
             <span>Subtotal: ({cart.length} itens)</span>
             <span>Total: R${total.toFixed(2 )}</span>
             <Link to="/pedido">
-            <button onClick={() => createPedidos({idCliente:1, itensPedido:JSON.stringify(cart), quantidadeItens:cart.length, totalPedido:total})}>Finalizar Compra</button>
+            <button className="buttonFinalizar" onClick={() => createPedidos({idCliente:1, itensPedido:JSON.stringify(cart), quantidadeItens:cart.length, totalPedido:total})}>Finalizar Compra</button>
             </Link>
+        </div>
         </div>
     </div>)
 }
