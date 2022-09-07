@@ -14,7 +14,9 @@ html {
 
 .subtitle-section1 {
     color: rgb(255, 255, 255);
-    font-size: 1rem;
+    font-size: .9rem;
+    padding: 10px;
+    font-family: gothan;
 }
 
 .lp {
@@ -36,6 +38,7 @@ html {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 40px;
 }
 
 .lpDiv2 {
@@ -133,14 +136,15 @@ html {
     margin-top: 2rem;
     margin-bottom: 3rem;
     border-radius: 50px;
-    -webkit-box-shadow: 0px 8px 31px 5px rgba(118,0,0,0.42); 
-    box-shadow: 0px 8px 31px 5px rgba(118,0,0,0.42);
+    -webkit-box-shadow: 0px 8px 31px 5px #15A014; 
+    box-shadow: 0px 8px 31px 5px #15A014;
     opacity: 80%;
+    transition: 500ms all ease-in-out;
+
 }
 
 .imageSection4:hover {
-    transition: 500ms;
     opacity: 100%;
-    width: 55.5vw;
+    transform: scale(1.04);
     height: 50.5vh;
 }
