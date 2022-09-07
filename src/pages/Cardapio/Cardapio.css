@@ -9,19 +9,22 @@
     background-size: cover;
     font-family: gothan;
     font-weight: lighter;
+    align-items: center;
 }
 
 .cardapioTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #02800F;
     margin-top: 2em;
+    font-family: iron;
+    font-size: 3rem;
 }
 
 .productsContainer {
     height: 100vh;
-    width: 100%;
+    max-width: 900px;
     display: flex;
     justify-content: center;
     gap: 2em;
