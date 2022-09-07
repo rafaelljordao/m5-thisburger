@@ -1,0 +1,56 @@
+.mainAtualizar{
+    background-image: url('../../assets/bg-footer.jpg');
+    color: white;
+    font-family: gothan;
+}
+
+.containerAtualizar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.cardAtualização{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quantidade{
+    width: 50px;
+}
+
+.buttonDivAtt{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btnatt{
+    width: 150px;
+    height: 25px;
+    margin: 5px 10px;
+    border-radius: 8px;
+    border: #02C815 1px solid;
+    cursor: pointer;
+    color:#02C815;
+    background-color: black;
+}
+
+.btnatt:hover{
+    border-color: chartreuse;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem chartreuse
+}
+
+.attfinal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
