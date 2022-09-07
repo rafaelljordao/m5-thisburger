@@ -4,6 +4,7 @@ import { cardapio  } from "../../Context/Context"
 import { updatePedidos } from "../../services/Request"
 import "./Atualizar.css"
 
+
 export function Atualizar(){
     const params = useParams()
     const [totalPedido, setTotalPedido] = useState(0)
@@ -22,6 +23,7 @@ export function Atualizar(){
     return (
         <>
         <main className="mainAtualizar">
+            <p className="attTitulo">Atualização de Pedido</p>
             <div className="containerAtualizar">
                 {novoPedido.map((item,index)=>{
                     return(
