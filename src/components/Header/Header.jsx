@@ -4,7 +4,7 @@ import { CartState } from "../../Context/Context";
 import "./Header.css";
 import logo from "../../assets/logo.png";
 
- const Header = () => {
+const Header = () => {
   const {
     state: { cart },
   } = CartState();
@@ -15,10 +15,10 @@ import logo from "../../assets/logo.png";
       <nav>
         <Link to="/">home</Link>
         <Link to='/cardapio'>cardápio</Link>
-        <Link to="/" >localização</Link>
-        <Link to="/">quem somos</Link>
+        <Link to="/?sort=WHERE" >localização</Link>
+        <Link to="/" >quem somos</Link>
         <div className="cart">
-          <Link to="/cart">
+          <Link to="/carrinho">
             <FaShoppingCart />
             <span className="cartNumber">{cart.length}</span>
           </Link>

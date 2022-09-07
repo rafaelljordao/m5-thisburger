@@ -12,9 +12,10 @@ import frontegg from '../assets/front-egg.png'
 const images = [xbug, backbacon, frontegg, ifsalada, elsetudo]
 
 const Cart = createContext();
-const cardapio = await listCardapio()
+export const cardapio = await listCardapio()
 cardapio.map((element,index) =>{
     element.image = images[index]
+    element.qty = 0
 })
 
 
@@ -28,7 +29,8 @@ const Context = ({children}) => {
 
     const [state, dispatch] = useReducer(cartReducer, {
         data,
-        cart: [],
+        cart: [], 
+        pedido: []
     })
 
     return (
@@ -41,4 +43,5 @@ export default Context
 export const CartState= () => {
     return useContext(Cart)
 }
+
 

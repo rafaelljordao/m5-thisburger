@@ -1,24 +1,21 @@
 import { useEffect, useState } from "react";
 import { CartState } from "../../Context/Context";
 import { FaTrashAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { createPedidos } from "../../services/Request";
+import { Link, useParams } from "react-router-dom";
+import { createPedidos, listPedidosById } from "../../services/Request";
 import './Cart.css'
 
 export const Cart = () => {
-
     const {state: { cart }, dispatch } = CartState()
-
     const [total, setTotal] = useState(0);
-
 
     useEffect(()=> {
         setTotal(cart.reduce((acc, current)=> acc + Number(current.preco) * current.qty ,0))
         console.log(cart)
     }, [cart])
-    
 
-    return(
+
+    return (
     <div className="cartPage">
         <div className="productContainer">
             <ul>
@@ -61,6 +58,5 @@ export const Cart = () => {
             <button onClick={() => createPedidos({idCliente:1, itensPedido:JSON.stringify(cart), quantidadeItens:cart.length, totalPedido:total})}>Finalizar Compra</button>
             </Link>
         </div>
-
     </div>)
 }
