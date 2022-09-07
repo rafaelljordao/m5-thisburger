@@ -11,8 +11,10 @@ export const CardComponent = ({prod}) => {
     return <div className="products">
                 <h2>{prod.nomeItem}</h2>
                 <h3>Preço: R$ {prod.preco}</h3>
-                <img className='prodImage' src={prod.image} />
-                <div className="ingredientesHover">Ingredientes: {prod.ingredientes}</div>
+                <div className='card-img'>
+                    <img className='prodImage' src={prod.image} />
+                </div>
+                <div className="ingredientes">Ingredientes: {prod.ingredientes.split(',').join(', ')}</div>
                 {
                 cart.some(p=>p.id===prod.id) ? (
                     <button onClick={() => {

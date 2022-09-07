@@ -29,11 +29,16 @@
   outline: none;
   width: 100%;
   padding: 0 5px;
+  transition: .3s all ease-in-out;
 }
 
 .email::placeholder {
   color: white;
   font-family: gothan;
+}
+
+.email:focus {
+  letter-spacing: 1.5px;
 }
 
 .cadastro .submit {
