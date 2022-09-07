@@ -18,7 +18,7 @@ import logo from "../../assets/logo.png";
         <Link to="/" >localização</Link>
         <Link to="/">quem somos</Link>
         <div className="cart">
-          <Link to="/cart">
+          <Link to="/carrinho">
             <FaShoppingCart />
             <span className="cartNumber">{cart.length}</span>
           </Link>

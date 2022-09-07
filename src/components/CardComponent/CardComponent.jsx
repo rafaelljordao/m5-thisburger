@@ -1,7 +1,7 @@
 import { CartState } from '../../Context/Context'
 import './CardComponent.css' 
-   
-   export const CardComponent = ({prod}) => {
+
+export const CardComponent = ({prod}) => {
 
     const {state: {cart},
     dispatch
@@ -28,9 +28,6 @@ import './CardComponent.css'
                     })
                 }} className=" botao addButton">Adicionar ao carrinho</button>)
                 }
-
             </div>
+}
 
-   }
-   
-   
