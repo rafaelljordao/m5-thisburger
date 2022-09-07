@@ -2,6 +2,9 @@
     background-image: url('../../assets/bg-footer.jpg');
     color: white;
     font-family: gothan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .containerAtualizar{
@@ -55,3 +58,18 @@
     align-items: center;
     margin: 25px 0 0 0;
 }
+
+.attTitulo{
+    color:#01B213;
+    font-family: iron;
+    display:flex;
+    justify-content: center;
+    width: 600px;
+    height: 135px;
+    text-align: center;
+    text-justify: center;
+    font-size: 36px;
+    background-image: url("../../assets/little-paranaue.png");
+    background-repeat: no-repeat ;
+}
+
