@@ -1,15 +1,16 @@
 
 .cardapio {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    gap: 4em;
-    background-image: url('../../assets/cardapio_background.png');
+    background-image: url('../../assets/bg-footer.jpg');
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: gothan;
     font-weight: lighter;
     align-items: center;
+    padding: 30px;
 }
 
 .cardapioTitle {
@@ -17,18 +18,16 @@
     flex-direction: column;
     align-items: center;
     color: #02800F;
-    margin-top: 2em;
+    margin: 2em ;
     font-family: iron;
     font-size: 3rem;
 }
 
 .productsContainer {
-    height: 100vh;
-    max-width: 900px;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 1em 4em;
     flex-wrap: wrap;
-    
 }
 
