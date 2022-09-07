@@ -23,7 +23,7 @@ export const Cart = () => {
                     cart.map(prod => (
                         <li className="cartProduct" key={prod.id}>
                             <img className="imgCartProduct" src={prod.image} />
-                            <p>{prod.name}</p> 
+                            <p>{prod.nomeItem}</p> 
                             R${Number(prod.preco)}
                             <input 
                             value={prod.qty} 
@@ -53,7 +53,7 @@ export const Cart = () => {
         </div>
         <div className="subTotal">
             <span>Subtotal: ({cart.length} itens)</span>
-            <span>Total: R${total}</span>
+            <span>Total: R${total.toFixed(2 )}</span>
             <Link to="/pedido">
             <button onClick={() => createPedidos({idCliente:1, itensPedido:JSON.stringify(cart), quantidadeItens:cart.length, totalPedido:total})}>Finalizar Compra</button>
             </Link>
