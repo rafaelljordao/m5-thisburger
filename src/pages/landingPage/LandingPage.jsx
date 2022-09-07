@@ -1,4 +1,3 @@
-import Footer from '../../components/footer/Footer'
 import './landingPage.css'
 
 export const LandingPage = () => {
@@ -9,7 +8,9 @@ export const LandingPage = () => {
                     <h1 className='title-section1'>This.Burger</h1>
                     <h4 className='subtitle-section1'>PEÇA DE QUALQUER LUGAR</h4>
                     <img src="src/assets/thisburger-logo.jpg" className='logo-section1'/>
+                    <a href='#promo'>
                     <img src="src/assets/arrow-lpsection1.jpg" className='arrowSection1' />
+                    </a>
                 </div>
             </div>
 
@@ -21,14 +22,14 @@ export const LandingPage = () => {
 
             <div className='lpDiv3'>
                 <div className='lpSection3'>
-                    {/* <img src="src/assets/BACK-BACON.gif" className='imageSection3'/> */}
-                    <img src="src/assets/promo-bb-lpsection3.jpg" className='imageSection3'/>
+                    <img src="src/assets/promo-bb-lpsection3.jpg" id="promo" className='imageSection3'/>
                 </div>
             </div>
 
             <div className='lpDiv4'>
+                    <h2>WHERE location LIKE This.Burger</h2>
                 <div className='lpSection4'>
-                    <img src="src/assets/thisburger-map.jpg" className='imageSection4'/>
+                    <img id="maps" src="src/assets/thisburger-map.jpg" className='imageSection4'/>
                 </div>
             </div>
         </div>
