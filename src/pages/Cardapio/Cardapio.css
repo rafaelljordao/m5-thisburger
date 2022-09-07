@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     color: #02800F;
-    margin: 2em ;
+    margin: 1em ;
     font-family: iron;
     font-size: 3rem;
 }
@@ -29,5 +29,6 @@
     justify-content: center;
     gap: 1em 4em;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 

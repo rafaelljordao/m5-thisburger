@@ -23,22 +23,39 @@
     transition: .3s all ease-in-out;
 }
 
-.card-img:hover ~.card-img img {
+.card-img img:hover{
     transform: scale(1.2);
 }
 
 
 .ingredientes {
     text-align: center;
+    padding: 5px;
     max-width: 250px;
+    transition: .3s all ease-in-out;
+}
+
+.ingredientes:hover {
+    transform: scale(1.2);
 }
 
 .botao {
     display: flex;
     cursor: pointer;
     margin-top: 0.5em;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: green;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-family: gothan;
+    font-size: 15px;
+    transition: .3s all ease-in-out;
+}
+
+.botao:hover {
+    /* transform: scale(1.1); */
+    background-color: #15A014;
 }
 
 .botao.removeButton {
