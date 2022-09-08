@@ -21,5 +21,18 @@
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",
     "vite": "^3.0.7"
-  }
+  },
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelljordao/m5-thisburger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelljordao/m5-thisburger/issues"
+  },
+  "homepage": "https://github.com/rafaelljordao/m5-thisburger#readme",
+  "description": ""
 }
