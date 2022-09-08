@@ -17,7 +17,7 @@ const Pedido = () => {
             prod.itensPedido = JSON.parse(prod.itensPedido)
             prod.itensPedido = prod.itensPedido.map((item)=>{
                 
-                return item.qty >0 ? `${item.nomeItem} Quantidade: ${item.qty} `: ""
+                return item.qty >0 ? ` ${item.qty}  ${item.nomeItem}; `: ""
             })
             })
             setHistorico(response)
@@ -35,25 +35,25 @@ useEffect(() => {
                 {
                     historico.map((prod) => {
                         return(
-                        <li className="cartPedido" key={prod.id}>
-                            <img className="imgCartProduct" src={prod.image} />
-                            <p>{prod.nomeItem}</p> 
-                            <p> Itens do Pedido: {prod.itensPedido} </p>
-                            <p> Total: {Number(prod.totalPedido)}</p>  
+                        <li className="list" key={prod.id}>
+                            <p className='list-itens'> Itens do Pedido: </p>
+                            <p> {prod.itensPedido} </p>
+                            <p className='total-pedido'> Total: {Number(prod.totalPedido)}</p>  
                             
-                            <button onClick={()=>{
+                            <div className='btn-pedido'>
+                            <button className='btn-content' onClick={()=>{
                                 navigate(`/pedido/${prod.id}`)
-                            }}> Alterar Pedido </button>
+                            }}> Atualizar Pedido </button>
 
-
-                            <button onClick={() => {
+                            <button className='btn-content' onClick={() => {
                                 const confirma = confirm("Tem certeza que deseja cancelar o pedido?")
                                 if (confirma) {
                                     deletePedidos(prod.id)
                                     .then(() => {
                                         fetch()   
                                     })}
-                            }}> Cancelar Pedido </button>      
+                            }}> Cancelar Pedido </button>
+                            </div>
                         </li>
                     )})
                 }
