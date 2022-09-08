@@ -92,11 +92,11 @@ Em seguida, clique no link que aparecerá em seu terminal para ser redirecionado
 
 Projeto desenvolvido em conjunto pelo Squad 1:
 
-* **Fernando Patrick** - *Gestor de Conhecimento* - [FernandoPatrick](https://github.com/FernandoPatrick)
-* **Flávio Christovam** - *Desenvolvedor* - [fchristovam](https://github.com/fchristovam)
-* **João Paulo** - *Desenvolvedor* - [Joao-P-G-Begiato](https://github.com/Joao-P-G-Begiato)
-* **Lucas Passos** - *Gestor de Gente* - [LucasBinho](https://github.com/LucasBinho)
-* **Rafael Jordão** - *Co-Facilitador* - [rafaelljordao](https://github.com/rafaelljordao)
+* **Fernando Patrick**  - [FernandoPatrick](https://github.com/FernandoPatrick)
+* **Flávio Christovam** -  [fchristovam](https://github.com/fchristovam)
+* **João Paulo** - [Joao-P-G-Begiato](https://github.com/Joao-P-G-Begiato)
+* **Lucas Passos** - [LucasBinho](https://github.com/LucasBinho)
+* **Rafael Jordão** - [rafaelljordao](https://github.com/rafaelljordao)
 
 ---
 
