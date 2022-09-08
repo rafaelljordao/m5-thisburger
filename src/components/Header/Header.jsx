@@ -15,8 +15,9 @@ const Header = () => {
       <nav>
         <Link to="/">home</Link>
         <Link to='/cardapio'>cardápio</Link>
+        <Link to="/" >localização</Link>
+        <Link to="/" >quem somos</Link>
         <Link to="/pedido">pedidos</Link>
-        <Link to="/?sort=WHERE" >localização</Link>
         <div className="cart">
           <Link to="/carrinho">
             <FaShoppingCart />
