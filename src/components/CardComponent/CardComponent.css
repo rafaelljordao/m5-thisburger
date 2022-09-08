@@ -1,69 +1,61 @@
 
-  @font-face {
-    font-family: iron;
-    src: url(./font/iron_brine/Iron&Brine.ttf);
-  }
-  
-
-.botao {
-    display: flex;
-    cursor: pointer;
-    margin-top: 0.5em;
-    border-radius: 3px;
-}
 .products{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    box-shadow: 0 4px 8px 0 rgba(232, 222, 222, 0.2);
-    height: 22em;
-    border-radius: 20px;
-}
-
-.products:hover {
-    width: 25em;
-    
+    max-width: 250px;
+    flex: 1;
 }
 
 .products h2 {
     text-transform: uppercase;
+    padding: 10px;
 }
 
-.ingredientesHover {
-    display: none;
+.products h3 {
+    padding: 10px;
 }
 
-.products:hover .ingredientesHover {
-    display: block;
-    margin-top: 20px;
+.card-img img{
+    border-radius: 10px;
+    transition: .3s all ease-in-out;
+}
+
+.card-img img:hover{
+    transform: scale(1.2);
+}
+
+
+.ingredientes {
     text-align: center;
-    font-size: 15px;
-    font-family: iron;
-    
+    padding: 5px;
+    max-width: 250px;
+    transition: .3s all ease-in-out;
 }
 
-.products:hover .prodImage {
-    display: inline-block;
-   
+.ingredientes:hover {
+    transform: scale(1.2);
 }
-
-.products:hover h2{
-    display: none;
-}
-
-.products:hover h3{
-    display: none;
-}
-
 
 .botao {
-    border-radius: 3px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-family: gothan;
+    font-size: 15px;
+    transition: .3s all ease-in-out;
 }
 
-.botao.addButton {
-    background-color: green;
+.botao:hover {
+    /* transform: scale(1.1); */
+    background-color: #15A014;
 }
 
 .botao.removeButton {

@@ -1,4 +1,5 @@
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -15,16 +16,16 @@ const Footer = () => {
       <div className="links">
         <div className="institucional">
           <h2>institucional</h2>
-          <Links href="">Home</Links>
-          <Links href="">Quem Somos</Links>
-          <Links href="">Cardápio</Links>
-          <Links href="">Contato</Links>
+          <Link to="">Home</Link>
+          <Link to="">Quem Somos</Link>
+          <Link to="">Cardápio</Link>
+          <Link to="">Contato</Link>
         </div>
-        <div className="cardapio">
+        <div className="cardapio-footer">
           <h2>cardápio</h2>
-          <Links href="">Burguers</Links>
-          <Links href="">Bebidas</Links>
-          <Links href="">Porções</Links>
+          <Link to="">Burguers</Link>
+          <Link to="">Bebidas</Link>
+          <Link to="">Porções</Link>
         </div>
       </div>
       <div className="social-media">

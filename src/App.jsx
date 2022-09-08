@@ -2,8 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Cart } from "./components/Cart/Cart";
 import { Cardapio } from "./pages/Cardapio/Cardapio";
 import { LandingPage } from "./pages/landingPage/LandingPage";
+import { Atualizar} from './components/atualizar/Atualizar.jsx'
 import Pedido from "./pages/pedido/Pedido";
 import Header from "./components/Header/Header";
+import Footer from './components/footer/Footer'
 import "./App.css"
 
 function App() {
@@ -12,10 +14,12 @@ function App() {
     <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/carrinho" element={<Cart />} />
         <Route path="/pedido" element={<Pedido />} />
+        <Route path="/pedido/:id" element={<Atualizar />} />
         <Route path="/cardapio" element={<Cardapio />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

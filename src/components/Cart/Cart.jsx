@@ -1,32 +1,31 @@
 import { useEffect, useState } from "react";
 import { CartState } from "../../Context/Context";
 import { FaTrashAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { createPedidos } from "../../services/Request";
+import { Link, useParams } from "react-router-dom";
+import { createPedidos, listPedidosById } from "../../services/Request";
 import './Cart.css'
 
 export const Cart = () => {
-
     const {state: { cart }, dispatch } = CartState()
-
     const [total, setTotal] = useState(0);
-
 
     useEffect(()=> {
         setTotal(cart.reduce((acc, current)=> acc + Number(current.preco) * current.qty ,0))
         console.log(cart)
     }, [cart])
-    
 
-    return(
+
+    return (
     <div className="cartPage">
+        <h1>Carrinho</h1>
+        <div className="container">
         <div className="productContainer">
             <ul>
                 {
                     cart.map(prod => (
                         <li className="cartProduct" key={prod.id}>
                             <img className="imgCartProduct" src={prod.image} />
-                            <p>{prod.name}</p> 
+                            <p>{prod.nomeItem}</p> 
                             R${Number(prod.preco)}
                             <input 
                             value={prod.qty} 
@@ -56,11 +55,11 @@ export const Cart = () => {
         </div>
         <div className="subTotal">
             <span>Subtotal: ({cart.length} itens)</span>
-            <span>Total: R${total}</span>
+            <span>Total: R${total.toFixed(2 )}</span>
             <Link to="/pedido">
-            <button onClick={() => createPedidos({idCliente:1, itensPedido:JSON.stringify(cart), quantidadeItens:cart.length, totalPedido:total})}>Finalizar Compra</button>
+            <button className="buttonFinalizar" onClick={() => createPedidos({idCliente:1, itensPedido:JSON.stringify(cart), quantidadeItens:cart.length, totalPedido:total})}>Finalizar Compra</button>
             </Link>
         </div>
-
+        </div>
     </div>)
 }

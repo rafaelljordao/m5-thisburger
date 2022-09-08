@@ -15,13 +15,13 @@ header {
   align-items: center;
   height: 55px;
   padding: 5px 50px;
-  /* background-color: rgba(23, 26, 31, 0.73); */
   background-color: black;
-  box-shadow: 0px 18px 20px 3px rgba(255,0,0,0.65);
+  box-shadow: 0px 1px 50px 8px #15A014;
   font-weight: 400;
   font-size: 20px;
   font-family: iron;
   width: 100%;
+  position: relative;
 }
 
 header img {
@@ -32,19 +32,22 @@ header img {
 
 header nav {
   display: flex;
-  gap: 40px;
+  gap: 10px;
   align-items: center;
 }
 
 
 header nav a {
   text-decoration: none;
-  color: #FF4D4D;
+  color: #01B213;
+  line-height: 50px;
+  border-radius: 5px;
+  padding: 0 10px;
 }
 
 header nav a:hover {
-  background-color: #FF4D4D;
-  color: white;
+  color: #FFFFFF;
+text-shadow: 0 0 5px #FFF, 0 0 10px #01B213, 0 0 15px #01B213, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
   cursor: pointer;
   transition: .3s all ease-in-out;
 }
@@ -53,7 +56,9 @@ header nav a:hover {
     margin-top: 10px;
     padding: 5px;
     color: #FF4D4D; 
-    /* background-color: rgb(255, 111, 0); */
+    line-height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
 .cartNumber {

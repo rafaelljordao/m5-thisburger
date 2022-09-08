@@ -1,7 +1,7 @@
 import { CartState } from '../../Context/Context'
 import './CardComponent.css' 
-   
-   export const CardComponent = ({prod}) => {
+
+export const CardComponent = ({prod}) => {
 
     const {state: {cart},
     dispatch
@@ -11,8 +11,10 @@ import './CardComponent.css'
     return <div className="products">
                 <h2>{prod.nomeItem}</h2>
                 <h3>Preço: R$ {prod.preco}</h3>
-                <img className='prodImage' src={prod.image} />
-                <div className="ingredientesHover">Ingredientes: {prod.ingredientes}</div>
+                <div className='card-img'>
+                    <img className='prodImage' src={prod.image} />
+                </div>
+                <div className="ingredientes">Ingredientes: {prod.ingredientes.split(',').join(', ')}</div>
                 {
                 cart.some(p=>p.id===prod.id) ? (
                     <button onClick={() => {
@@ -28,9 +30,6 @@ import './CardComponent.css'
                     })
                 }} className=" botao addButton">Adicionar ao carrinho</button>)
                 }
-
             </div>
+}
 
-   }
-   
-   

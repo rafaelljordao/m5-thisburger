@@ -1,0 +1,75 @@
+.mainAtualizar{
+    background-image: url('../../assets/bg-footer.jpg');
+    color: white;
+    font-family: gothan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerAtualizar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.cardAtualização{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quantidade{
+    width: 50px;
+}
+
+.buttonDivAtt{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btnatt{
+    width: 150px;
+    height: 25px;
+    margin: 5px 10px;
+    border-radius: 8px;
+    border: #02C815 1px solid;
+    cursor: pointer;
+    color:#02C815;
+    background-color: black;
+}
+
+.btnatt:hover{
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #01B213, 0 0 15px #01B213, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.attfinal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+
+.attTitulo{
+    color:#01B213;
+    font-family: iron;
+    display:flex;
+    justify-content: center;
+    width: 600px;
+    height: 135px;
+    text-align: center;
+    text-justify: center;
+    font-size: 36px;
+    background-image: url("../../assets/little-paranaue.png");
+    background-repeat: no-repeat ;
+}
+

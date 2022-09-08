@@ -1,8 +1,8 @@
-/* 
+
 
 
 .footer-header {
-  background-color: rgba(150, 38, 38, 1);
+  background-color: #15A014;
   padding: 25px;
   display: flex;
   justify-content: space-around;
@@ -29,11 +29,16 @@
   outline: none;
   width: 100%;
   padding: 0 5px;
+  transition: .3s all ease-in-out;
 }
 
 .email::placeholder {
   color: white;
   font-family: gothan;
+}
+
+.email:focus {
+  letter-spacing: 1.5px;
 }
 
 .cadastro .submit {
@@ -44,7 +49,7 @@
 }
 
 footer .footer-main {
-  background-image: url(./bg-footer.jpg);
+  background-image: url(../../assets/bg-footer.jpg);
   color: white;
   display: flex;
   justify-content: space-around;
@@ -80,18 +85,18 @@ footer .footer-main {
   cursor: pointer;
 }
 
-.cardapio {
+.cardapio-footer {
   display: flex;
   flex-direction: column;
   font-family: gothan;
 }
 
-.cardapio a  {
+.cardapio-footer a  {
   text-decoration: none;
   color: white;
 }
 
-.cardapio a:hover {
+.cardapio-footer a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -106,4 +111,4 @@ footer .footer-main {
   font-family: gothan;
   font-size: 13px;
   padding: 0 30px;
-} */
+}
