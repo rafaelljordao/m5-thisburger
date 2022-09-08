@@ -1,0 +1,31 @@
+.quemsomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    font-family: iron;
+    font-style: italic;
+    background-image: url('../../assets/bg-footer.jpg');
+}
+
+.contatos {
+    display: flex;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 2em;
+}
+
+.titulo h2 {
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { CartState } from "../../Context/Context";
 import { FaTrashAlt } from "react-icons/fa";
-import { Link, useParams } from "react-router-dom";
-import { createPedidos, listPedidosById } from "../../services/Request";
+import { Link  } from "react-router-dom";
+import { createPedidos } from "../../services/Request";
 import './Cart.css'
 
 export const Cart = () => {
