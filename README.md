@@ -59,22 +59,58 @@ Após a instalação do Node utilizaremos os comandos do NPM (Node Package Manag
 ```
 npm install
 ```
-Após a instalação você ele deve ter baixado uma pasta chamada node_modules e um arquivo chamado package.json onde você poderá ver as dependências do projeto já instaladas.
-Conforme abaixo:
-![pastas](./assets/node.jpeg)
+Após a instalação você ele deve ter baixado uma pasta chamada node_modules e um arquivo chamado package.json onde você poderá ver as dependências do projeto já instaladas, conforme abaixo:  
+
+![pastas](./src/assets/node.jpeg)  
 
 
-##Rodando a aplicação:
+## Rodando a aplicação:
 
 Para rodas a aplicação basta utilizar o seguinte comando no terminal:
 ```
 npm run dev 
 ```
 
-Em seguida, clique no link que aparecerá em seu terminal para ser redirecionado até sua página na web. Como ilustrado a seguir:
-![pastas](./assets/npm.jpeg)
+Em seguida, clique no link que aparecerá em seu terminal para ser redirecionado até sua página na web. Como ilustrado a seguir:  
+
+![pastas](./src/assets/npm.jpeg)  
 
 
+---
+
+## 🛠️ Construído com as seguintes ferramentas:
+
+* [Vite](https://vitejs.dev/guide/)
+* [React](https://pt-br.reactjs.org/docs/getting-started.html)
+* [Node](https://nodejs.org/en/docs/)
+* [Axios](https://axios-http.com/ptbr/docs/intro)
 
 
+---
+
+## ✒️ Autores
+
+Projeto desenvolvido em conjunto pelo Squad 1:
+
+* **Fernando Patrick** - *Gestor de Conhecimento* - [FernandoPatrick](https://github.com/FernandoPatrick)
+* **Flávio Christovam** - *Desenvolvedor* - [fchristovam](https://github.com/fchristovam)
+* **João Paulo** - *Desenvolvedor* - [Joao-P-G-Begiato](https://github.com/Joao-P-G-Begiato)
+* **Lucas Passos** - *Gestor de Gente* - [LucasBinho](https://github.com/LucasBinho)
+* **Rafael Jordão** - *Co-Facilitador* - [rafaelljordao](https://github.com/rafaelljordao)
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/Joao-P-G-Begiato/deburger/blob/main/LICENSE) para detalhes.
+
+---
+
+## 🎁 Expressões de gratidão
+
+* Aos colegas desenvolvedores que participaram desse projeto (listados acima).
+* Aos facilitadores Tech Jarom Aidukaitis, Leonardo Costa e Jonas Emanuel que nos acolheram nesse universo.
+* A facilitadora Anna Caroline Souza que nos deu força nos momentos mais tortuosos dessa jornada.
+
+---
 
