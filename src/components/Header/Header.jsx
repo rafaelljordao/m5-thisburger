@@ -15,7 +15,6 @@ const Header = (props) => {
       <nav>
         <Link to="/">home</Link>
         <Link to='/cardapio'>cardápio</Link>
-        <Link to="/" >localização</Link>
         <Link to="/quemsomos" >quem somos</Link>
         <Link to="/pedido">pedidos</Link>
         <div className="cart">
