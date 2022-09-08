@@ -1,10 +1,10 @@
 import { FaShoppingCart } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CartState } from "../../Context/Context";
-import "./Header.css";
 import logo from "../../assets/logo.png";
+import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
   const {
     state: { cart },
   } = CartState();
@@ -15,7 +15,6 @@ const Header = () => {
       <nav>
         <Link to="/">home</Link>
         <Link to='/cardapio'>cardápio</Link>
-        <Link to="/" >localização</Link>
         <Link to="/" >quem somos</Link>
         <Link to="/pedido">pedidos</Link>
         <div className="cart">

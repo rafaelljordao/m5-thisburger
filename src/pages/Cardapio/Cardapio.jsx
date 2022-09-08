@@ -14,7 +14,7 @@ export const Cardapio = () => {
   return (
       <div className="cardapio">
         <div className="cardapioTitle">
-         <h2>Cardápio</h2>
+          <h2>Cardápio</h2>
         </div>
         <div className="productsContainer">
             {produtos.map((prod) => (
