@@ -17,6 +17,7 @@ const Header = () => {
         <Link to='/cardapio'>cardápio</Link>
         <Link to="/" >localização</Link>
         <Link to="/" >quem somos</Link>
+        <Link to="/pedido">pedidos</Link>
         <div className="cart">
           <Link to="/carrinho">
             <FaShoppingCart />
