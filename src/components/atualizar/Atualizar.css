@@ -8,6 +8,7 @@
 }
 
 .containerAtualizar{
+    gap: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,6 +16,7 @@
 }
 
 .cardAtualização{
+    padding: 25px;
     width: 25vw;
     display: flex;
     justify-content: center;
@@ -61,6 +63,7 @@
 
 .attTitulo{
     color:#01B213;
+    padding: 45px;
     font-family: iron;
     display:flex;
     justify-content: center;
