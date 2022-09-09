@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 100%;
     width: 100%;
     font-family: iron;
     font-style: italic;
@@ -12,6 +12,9 @@
 
 .contatos {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .titulo {
