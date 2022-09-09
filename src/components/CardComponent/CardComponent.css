@@ -9,10 +9,6 @@
     flex: 1;
 }
 
-/* .products h2 {
-    text-transform: uppercase;
-    padding: 10px;
-} */
 
 .products h3 {
     padding: 10px;
@@ -56,7 +52,6 @@
 }
 
 .botao:hover {
-    /* transform: scale(1.1); */
     background-color: #15A014;
 }
 

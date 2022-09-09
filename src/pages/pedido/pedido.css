@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 .pedido{
     background: url(../../assets/bg-footer.jpg);
     background-repeat: no-repeat;
@@ -39,5 +36,9 @@
 }
 
 .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 50px;
 }
+
