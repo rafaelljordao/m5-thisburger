@@ -1,7 +1,9 @@
 import "./landingPage.css";
 
 export const LandingPage = () => {
-  return (
+
+  return  (
+    
     <div className="lp">
       <div className="lpDiv1">
         <div className="lpSection1">

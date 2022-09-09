@@ -7,7 +7,86 @@
     <title>This.Burger</title>
   </head>
   <body>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      
+      body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          background-color: #f1f1f1;
+      }
+      
+      .content-loading {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+    
+      
+      #root:not(:empty)+.content-loading {
+          display: none;
+        }
+      
+        .sk-cube-grid {
+          width: 50px;
+          height: 50px;
+      }
+      
+      .sk-cube-grid .sk-cube {
+          width: 33%;
+          height: 33%;
+         
+          float: left;
+          animation: sk-cubeGridScaleDelay 1.5s infinite ease-in-out;
+      }
+      
+     
+.popup {
+  animation-name: popup;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes popup {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: scaleY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #008000;
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px;
+  }
+}
+
+.loadingBurger{
+  animation: pulse 1.5s linear infinite;
+  border-radius: 50%;
+}
+
+  </style>
     <div id="root"></div>
+    <div class="content-loading popup">
+      <div class="loadingBurger"><img src='./src/assets/loadingBurger.png' ></div>
+  </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+            
