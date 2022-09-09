@@ -10,10 +10,10 @@ export const LandingPage = () => {
           <h6>NO BURGER LIKE</h6>
           <h1 className="title-section1">This.Burger</h1>
           <h4 className="subtitle-section1">PEÇA DE QUALQUER LUGAR</h4>
-          <img src="src/assets/thisburger-logo.jpg" className="logo-section1" />
+          <img src="src/assets/thisburger-logo.png" className="logo-section1" />
           <a href="#promo">
             <img
-              src="src/assets/arrow-lpsection1.jpg"
+              src="src/assets/arrow-lpsection1.png"
               className="arrowSection1"
             />
           </a>
