@@ -16,7 +16,8 @@ export const cardapio = await listCardapio();
 cardapio.map((element, index) => {
   element.image = images[index];
   element.qty = 0;
-});
+}
+);
 
 const Context = ({ children }) => {
   const data = {
