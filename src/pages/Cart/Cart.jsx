@@ -14,15 +14,15 @@ export const Cart = () => {
 
   const handleKeyDown = (event) => {
     if (
-      event.key === "e" ||
-      event.key === "0" ||
-      event.key === "Backspace" ||
-      event.key === "." ||
-      event.key === "-" ||
-      event.key === "+" ||
-      event.key === "-" ||
-      event.key === "," ||
-      !event.key === /^[0-9\b]+$/
+      event.key == "e" ||
+      event.key == "0" ||
+      event.key == "Backspace" ||
+      event.key == "." ||
+      event.key == "-" ||
+      event.key == "+" ||
+      event.key == "-" ||
+      event.key == "," ||
+      !event.key == /^[0-9\b]+$/
     ) {
       event.preventDefault();
     }
