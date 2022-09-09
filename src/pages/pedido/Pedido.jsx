@@ -1,11 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { deletePedidos, listPedidos } from "../../services/Request";
-import "./pedido.css";
 import { useNavigate } from "react-router-dom";
+import loadingBurger from "../../assets/loadingBurger.png";
+import "./pedido.css";
 
 const Pedido = () => {
   const [historico, setHistorico] = useState([]);
+  const [isLoading, setIsLoading] = useState('loadingBurguer popup');
+  const [hidden, setHidden] = useState('hidden');
+
   const navigate = useNavigate();
   function fetch() {
     listPedidos().then((response) => {
@@ -16,6 +20,8 @@ const Pedido = () => {
         });
       });
       setHistorico(response);
+      setIsLoading('hidden')
+      setHidden('pedidoContainer')
     });
   }
   useEffect(() => {
@@ -24,7 +30,12 @@ const Pedido = () => {
 
   return (
     <div className="pedido">
-      <div className="pedidoContainer">
+      <div>
+        <div className={isLoading}>
+          <img src={loadingBurger} />
+        </div>
+      </div>
+      <div className={hidden}>
         <ul>
           {historico.map((prod) => {
             return (
