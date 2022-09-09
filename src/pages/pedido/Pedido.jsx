@@ -30,12 +30,11 @@ const Pedido = () => {
             return (
               <li className="list" key={prod.id}>
                 <div className="listInfo">
-                    <p className="list-itens">Itens do Pedido:</p>
-                    <p> {prod.itensPedido} </p>
-                    <p className="total-pedido">
-                      {" "}
-                      Total: {Number(prod.totalPedido).toFixed(2)}
-                    </p>
+                  <p className="list-itens">Itens do Pedido:</p>
+                  <p> {prod.itensPedido} </p>
+                  <p className="total-pedido">
+                    Total: {Number(prod.totalPedido).toFixed(2)}
+                  </p>
                 </div>
 
                 <div className="btn-pedido">
@@ -45,8 +44,7 @@ const Pedido = () => {
                       navigate(`/pedido/${prod.id}`);
                     }}
                   >
-                    {" "}
-                    Atualizar Pedido{" "}
+                    Atualizar Pedido
                   </button>
 
                   <button
@@ -62,8 +60,7 @@ const Pedido = () => {
                       }
                     }}
                   >
-                    {" "}
-                    Cancelar Pedido{" "}
+                    Cancelar Pedido
                   </button>
                 </div>
               </li>

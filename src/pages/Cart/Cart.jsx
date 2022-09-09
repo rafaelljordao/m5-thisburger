@@ -35,7 +35,6 @@ export const Cart = () => {
         0
       )
     );
-    console.log(cart);
   }, [cart]);
 
   return (

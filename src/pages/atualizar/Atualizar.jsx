@@ -27,15 +27,15 @@ export function Atualizar() {
           {novoPedido.map((item, index) => {
             return (
               <div className="cardAtualização" key={index}>
-                <h2>
-                  {item.nomeItem} - R$ {item.preco}
-                </h2>
                 <img src={item.image}></img>
-                <p>{item.ingredientes.split(",").join(", ")}</p>
+                <p className="ingredientes">
+                  Ingredientes: {item.ingredientes.split(",").join(", ")}
+                </p>
+                <h2>Preço: R$ {item.preco}</h2>
                 <div>
                   <label> Quantidade: </label>
                   <input
-                    className="quantidade"
+                    className="quantidade numberImput"
                     type="number"
                     min="0"
                     onChange={(e) => {
@@ -51,8 +51,8 @@ export function Atualizar() {
         <div className="attfinal">
           <h1> Total: R$ {totalPedido} </h1>
           <div className="buttonDivAtt">
-            <button
-              className="btnatt"
+            <button 
+              className="btn-content"
               onClick={(e) => {
                 e.preventDefault();
                 const sumItens = novoPedido
@@ -70,12 +70,10 @@ export function Atualizar() {
                 });
               }}
             >
-              {" "}
-              Atualizar meu Pedido
+              Atualizar Pedido
             </button>
-            <button className="btnatt" onClick={() => navigate("/pedido")}>
-              {" "}
-              Voltar{" "}
+            <button className="btn-content" onClick={() => navigate("/pedido")}>
+              Voltar
             </button>
           </div>
         </div>

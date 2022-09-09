@@ -9,7 +9,6 @@ export const CardComponent = ({ prod }) => {
 
   return (
     <div className="products">
-      {/* <h2>{prod.nomeItem}</h2> */}
       <div className="card-img">
         <img className="prodImage" src={prod.image} />
       </div>
