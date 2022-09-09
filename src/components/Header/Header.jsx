@@ -1,10 +1,10 @@
 import { FaShoppingCart } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CartState } from "../../Context/Context";
 import logo from "../../assets/logo.png";
 import "./Header.css";
 
-const Header = (props) => {
+const Header = () => {
   const {
     state: { cart },
   } = CartState();
@@ -14,8 +14,8 @@ const Header = (props) => {
       <img src={logo} alt="logo" />
       <nav>
         <Link to="/">home</Link>
-        <Link to='/cardapio'>cardápio</Link>
-        <Link to="/quemsomos" >quem somos</Link>
+        <Link to="/cardapio">cardápio</Link>
+        <Link to="/quemsomos">quem somos</Link>
         <Link to="/pedido">pedidos</Link>
         <div className="cart">
           <Link to="/carrinho">
@@ -28,4 +28,4 @@ const Header = (props) => {
   );
 };
 
-export default Header
+export default Header;
