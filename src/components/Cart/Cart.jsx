@@ -9,6 +9,14 @@ export const Cart = () => {
     const {state: { cart }, dispatch } = CartState()
     const [total, setTotal] = useState(0);
 
+
+    const handleKeyDown = (event) => {
+        if(event.key === 'e'||event.key === '0'||event.key === 'Backspace' || event.key === '.' || event.key === '-' || event.key === '+' || event.key === '-'  || event.key === ',' || !event.key === /^[0-9\b]+$/) {
+            event.preventDefault()
+        }
+    }
+
+
     useEffect(()=> {
         setTotal(cart.reduce((acc, current)=> acc + Number(current.preco) * current.qty ,0))
         console.log(cart)
@@ -29,6 +37,7 @@ export const Cart = () => {
                             R${Number(prod.preco)}
                             <input 
                             value={prod.qty} 
+                            onKeyDown={handleKeyDown}
                             onChange={(e) => {
                                 dispatch({
                                     type: "CHANGE_CART_QTY",
@@ -40,8 +49,10 @@ export const Cart = () => {
                             }}
                             className="numberImput" 
                             type="number" 
-                            min="0"/>
+                            min="1"
+                            />
                             <span onClick={() => {
+                              
                                 dispatch({
                                     type: "REMOVE_FROM_CART",
                                     payload: prod
