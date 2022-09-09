@@ -8,27 +8,27 @@ export const CardComponent = ({prod}) => {
     } = CartState()
 
 
-    return <div className="products">
-                <h2>{prod.nomeItem}</h2>
-                <h3>Preço: R$ {prod.preco}</h3>
+    return  <div className="products">
+                {/* <h2>{prod.nomeItem}</h2> */}
                 <div className='card-img'>
                     <img className='prodImage' src={prod.image} />
                 </div>
                 <div className="ingredientes">Ingredientes: {prod.ingredientes.split(',').join(', ')}</div>
+                <h3>Preço: R$ {prod.preco}</h3>
                 {
-                cart.some(p=>p.id===prod.id) ? (
-                    <button onClick={() => {
+                    cart.some(p=>p.id===prod.id) ? (
+                        <button onClick={() => {
+                            dispatch({
+                                type: "REMOVE_FROM_CART",
+                                payload: prod
+                            })
+                        }} className=" botao removeButton">Remover do Carrinho</button>
+                    ) : (<button onClick={() => {
                         dispatch({
-                            type: "REMOVE_FROM_CART",
+                            type: "ADD_TO_CART",
                             payload: prod
                         })
-                    }} className=" botao removeButton">Remover do Carrinho</button>
-                ) : (<button onClick={() => {
-                    dispatch({
-                        type: "ADD_TO_CART",
-                        payload: prod
-                    })
-                }} className=" botao addButton">Adicionar ao carrinho</button>)
+                    }} className=" botao addButton">Adicionar ao carrinho</button>)
                 }
             </div>
 }
