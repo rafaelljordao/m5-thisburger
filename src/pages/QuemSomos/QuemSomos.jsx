@@ -1,6 +1,6 @@
 import { CardContato } from "../../components/CardContato/CardContato";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+  import { FaLinkedin } from "react-icons/fa";
+  import { FaGithub } from "react-icons/fa";
 import imageLucas from "../../assets/lucaspassos.jfif";
 import imageFlavio from "../../assets/flaviochristovam.jpeg";
 import imageFernando from "../../assets/fernandopatrick.jpeg";

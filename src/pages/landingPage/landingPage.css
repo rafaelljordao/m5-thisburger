@@ -101,6 +101,18 @@ html {
     background-color: rgb(21, 20, 20);
 }
 
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
 
 .arrowSection1 {
     width: 5rem;
