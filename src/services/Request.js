@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const url = "https://thisburger.herokuapp.com/pedido";
+const url = "https://thisburger-production.up.railway.app/pedido";
 
 export async function listCardapio() {
   const response = await axios.get(
-    "https://thisburger.herokuapp.com/cardapio/"
+    "https://thisburger-production.up.railway.app/cardapio/"
   );
   return response.data;
 }

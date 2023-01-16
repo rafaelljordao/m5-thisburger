@@ -39,13 +39,16 @@ export const LandingPage = () => {
       <div className="lpDiv4">
         <h2>WHERE location LIKE This.Burger</h2>
         <div className="lpSection4">
-          <img
-            id="maps"
-            src="src/assets/thisburger-map.jpg"
-            className="imageSection4"
-          />
+          <div className="mapouter">
+            <div className="gmap_canvas">
+              <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Blk%203%20Lot%209%20Avenida%20Rizal%20street%20Bahayang%20Pag%20Asa%20Subd,%20Bacoor,%204102%20Cavite,%20Filipinas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+              <a href="https://putlocker-is.org">putlocker</a>
+              <a href="https://www.embedgooglemap.net">embed responsive google map</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
